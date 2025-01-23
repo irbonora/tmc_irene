@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZSMPINmMEe-WMcQgXaRkMQ" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_ZSMPIdmMEe-WMcQgXaRkMQ" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_ZSMPItmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMPI9mMEe-WMcQgXaRkMQ" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_ZSMPJNmMEe-WMcQgXaRkMQ" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_ZSMPJdmMEe-WMcQgXaRkMQ" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_ZSMPJtmMEe-WMcQgXaRkMQ" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPJ9mMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPKNmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPKdmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPKtmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPK9mMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPLNmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPLdmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPLtmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPL9mMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPMNmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPMdmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPMtmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPM9mMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPNNmMEe-WMcQgXaRkMQ" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_ZSMPNdmMEe-WMcQgXaRkMQ" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="120">
+    <elementParameter xmi:id="_ZSMPNtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_ZSMPN9mMEe-WMcQgXaRkMQ" field="DIRECTORY" name="URI" value="&quot;C:/StudentFiles/routes/r06_messageRouter/input&quot;"/>
+    <elementParameter xmi:id="_ZSMPONmMEe-WMcQgXaRkMQ" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_ZSMPOdmMEe-WMcQgXaRkMQ" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_ZSMPOtmMEe-WMcQgXaRkMQ" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_ZSMPO9mMEe-WMcQgXaRkMQ" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_ZSMPPNmMEe-WMcQgXaRkMQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_ZSMPPdmMEe-WMcQgXaRkMQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_ZSMPPtmMEe-WMcQgXaRkMQ" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_ZSMPP9mMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_ZSMPQNmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPQdmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPQtmMEe-WMcQgXaRkMQ" componentName="cMessageRouter" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="120">
+    <elementParameter xmi:id="_ZSMPQ9mMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cMessageRouter_1" show="false"/>
+    <elementParameter xmi:id="_ZSMPRNmMEe-WMcQgXaRkMQ" field="CLOSED_LIST" name="ROUTE_WHEN_LANGUAGES" value="constant" show="false"/>
+    <elementParameter xmi:id="_ZSMPRdmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPRtmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPR9mMEe-WMcQgXaRkMQ" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="40">
+    <elementParameter xmi:id="_ZSMPSNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_ZSMPSdmMEe-WMcQgXaRkMQ" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false"/>
+    <elementParameter xmi:id="_ZSMPStmMEe-WMcQgXaRkMQ" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_4"/>
+    <elementParameter xmi:id="_ZSMPS9mMEe-WMcQgXaRkMQ" field="TEXT" name="NAME" value="to_HD_route_1" show="false"/>
+    <elementParameter xmi:id="_ZSMPTNmMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_ZSMPTdmMEe-WMcQgXaRkMQ" field="TEXT" name="LABEL" value="to_HD_route_1"/>
+    <elementParameter xmi:id="_ZSMPTtmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPT9mMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPUNmMEe-WMcQgXaRkMQ" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="120">
+    <elementParameter xmi:id="_ZSMPUdmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_ZSMPUtmMEe-WMcQgXaRkMQ" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false"/>
+    <elementParameter xmi:id="_ZSMPU9mMEe-WMcQgXaRkMQ" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_4"/>
+    <elementParameter xmi:id="_ZSMPVNmMEe-WMcQgXaRkMQ" field="TEXT" name="NAME" value="to_HD_route_2" show="false"/>
+    <elementParameter xmi:id="_ZSMPVdmMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_ZSMPVtmMEe-WMcQgXaRkMQ" field="TEXT" name="LABEL" value="to_HD_route_2"/>
+    <elementParameter xmi:id="_ZSMPV9mMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPWNmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPWdmMEe-WMcQgXaRkMQ" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="200">
+    <elementParameter xmi:id="_ZSMPWtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+    <elementParameter xmi:id="_ZSMPW9mMEe-WMcQgXaRkMQ" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false"/>
+    <elementParameter xmi:id="_ZSMPXNmMEe-WMcQgXaRkMQ" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_5"/>
+    <elementParameter xmi:id="_ZSMPXdmMEe-WMcQgXaRkMQ" field="TEXT" name="NAME" value="to_SD_route" show="false"/>
+    <elementParameter xmi:id="_ZSMPXtmMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_ZSMPX9mMEe-WMcQgXaRkMQ" field="TEXT" name="LABEL" value="to_SD_route"/>
+    <elementParameter xmi:id="_ZSMPYNmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPYdmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPYtmMEe-WMcQgXaRkMQ" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="80" posY="320">
+    <elementParameter xmi:id="_ZSMPY9mMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+    <elementParameter xmi:id="_ZSMPZNmMEe-WMcQgXaRkMQ" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_ZSMPZdmMEe-WMcQgXaRkMQ" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPZtmMEe-WMcQgXaRkMQ" field="TEXT" name="NAME" value="&quot;HD&quot;"/>
+    <elementParameter xmi:id="_ZSMPZ9mMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_ZSMPaNmMEe-WMcQgXaRkMQ" field="TEXT" name="LABEL" value="process_HD_movies"/>
+    <elementParameter xmi:id="_ZSMPadmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPatmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPa9mMEe-WMcQgXaRkMQ" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="320">
+    <elementParameter xmi:id="_ZSMPbNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_ZSMPbdmMEe-WMcQgXaRkMQ" field="DIRECTORY" name="URI" value="&quot;C:/StudentFiles/routes/r06_messageRouter/output/HD&quot;"/>
+    <elementParameter xmi:id="_ZSMPbtmMEe-WMcQgXaRkMQ" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_ZSMPb9mMEe-WMcQgXaRkMQ" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_ZSMPcNmMEe-WMcQgXaRkMQ" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_ZSMPcdmMEe-WMcQgXaRkMQ" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_ZSMPctmMEe-WMcQgXaRkMQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_ZSMPc9mMEe-WMcQgXaRkMQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_ZSMPdNmMEe-WMcQgXaRkMQ" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_ZSMPddmMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_ZSMPdtmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPd9mMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPeNmMEe-WMcQgXaRkMQ" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="80" posY="400">
+    <elementParameter xmi:id="_ZSMPedmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_5" show="false"/>
+    <elementParameter xmi:id="_ZSMPetmMEe-WMcQgXaRkMQ" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_ZSMPe9mMEe-WMcQgXaRkMQ" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_ZSMPfNmMEe-WMcQgXaRkMQ" field="TEXT" name="NAME" value="&quot;SD&quot;"/>
+    <elementParameter xmi:id="_ZSMPfdmMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_ZSMPftmMEe-WMcQgXaRkMQ" field="TEXT" name="LABEL" value="process_SD_movies"/>
+    <elementParameter xmi:id="_ZSMPf9mMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPgNmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPgdmMEe-WMcQgXaRkMQ" componentName="cSetHeader" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="400">
+    <elementParameter xmi:id="_ZSMPgtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_ZSMPg9mMEe-WMcQgXaRkMQ" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_ZSMPhNmMEe-WMcQgXaRkMQ" elementRef="NAME" value="&quot;MOVIEtITLE&quot;"/>
+      <elementValue xmi:id="_ZSMPhdmMEe-WMcQgXaRkMQ" elementRef="LANGUAGE" value="xpath"/>
+      <elementValue xmi:id="_ZSMPhtmMEe-WMcQgXaRkMQ" elementRef="EXPRESSION" value="&quot;/movie/title/text()&quot;"/>
+    </elementParameter>
+    <elementParameter xmi:id="_ZSMPh9mMEe-WMcQgXaRkMQ" field="TABLE" name="CLEAN_VALUES"/>
+    <elementParameter xmi:id="_ZSMPiNmMEe-WMcQgXaRkMQ" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_ZSMPidmMEe-WMcQgXaRkMQ" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_ZSMPitmMEe-WMcQgXaRkMQ" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_ZSMPi9mMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPjNmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPjdmMEe-WMcQgXaRkMQ" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="400">
+    <elementParameter xmi:id="_ZSMPjtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cFile_3" show="false"/>
+    <elementParameter xmi:id="_ZSMPj9mMEe-WMcQgXaRkMQ" field="DIRECTORY" name="URI" value="&quot;C:/StudentFiles/routes/r06_messageRouter/output/SD&quot;"/>
+    <elementParameter xmi:id="_ZSMPkNmMEe-WMcQgXaRkMQ" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_ZSMPkdmMEe-WMcQgXaRkMQ" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_ZSMPktmMEe-WMcQgXaRkMQ" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_ZSMPk9mMEe-WMcQgXaRkMQ" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_ZSMPlNmMEe-WMcQgXaRkMQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_ZSMPldmMEe-WMcQgXaRkMQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_ZSMPltmMEe-WMcQgXaRkMQ" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_ZSMPl9mMEe-WMcQgXaRkMQ" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_ZSMPmNmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPmdmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_ZSMPmtmMEe-WMcQgXaRkMQ" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="400">
+    <elementParameter xmi:id="_ZSMPm9mMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_ZSMPnNmMEe-WMcQgXaRkMQ" field="TEXT" name="LOGGING_CATEGORY" value="&quot;messageRouter.cLog_1&quot;"/>
+    <elementParameter xmi:id="_ZSMPndmMEe-WMcQgXaRkMQ" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_ZSMPntmMEe-WMcQgXaRkMQ" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_ZSMPn9mMEe-WMcQgXaRkMQ" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_ZSMPoNmMEe-WMcQgXaRkMQ" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_ZSMPodmMEe-WMcQgXaRkMQ" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_ZSMPotmMEe-WMcQgXaRkMQ" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_ZSMPo9mMEe-WMcQgXaRkMQ" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_ZSMPpNmMEe-WMcQgXaRkMQ" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_ZSMPpdmMEe-WMcQgXaRkMQ" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_ZSMPptmMEe-WMcQgXaRkMQ" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_ZSMPp9mMEe-WMcQgXaRkMQ" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_ZSMPqNmMEe-WMcQgXaRkMQ" field="TEXT" name="MESSAGE" value=" &quot;The following movie: ${in.header.movieTitle} is only available in standard definition, please consider upgrading to HD.&quot;"/>
+    <elementParameter xmi:id="_ZSMPqdmMEe-WMcQgXaRkMQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_ZSMPqtmMEe-WMcQgXaRkMQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_ZSMPq9mMEe-WMcQgXaRkMQ" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cFile_1" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cMessageRouter_1">
+    <elementParameter xmi:id="_ZSMPrNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPrdmMEe-WMcQgXaRkMQ" connectorName="ROUTE_WHEN" label="when_4k" lineStyle="15" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="cMessageRouter_1" target="cDirect_1">
+    <elementParameter xmi:id="_ZSMPrtmMEe-WMcQgXaRkMQ" field="CLOSED_LIST" name="ROUTETYPE" value="xpath"/>
+    <elementParameter xmi:id="_ZSMPr9mMEe-WMcQgXaRkMQ" field="MEMO_JAVA" name="CONDITION" value="&quot;/movie/discType = '4k'&quot;"/>
+    <elementParameter xmi:id="_ZSMPsNmMEe-WMcQgXaRkMQ" field="CHECK" name="ENDOFCHOICE" value="false"/>
+    <elementParameter xmi:id="_ZSMPsdmMEe-WMcQgXaRkMQ" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_ZSMPstmMEe-WMcQgXaRkMQ" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_ZSMPs9mMEe-WMcQgXaRkMQ" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_ZSMPtNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="when_4k" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPtdmMEe-WMcQgXaRkMQ" connectorName="ROUTE_WHEN" label="when_blu_ray" lineStyle="15" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="cMessageRouter_1" target="cDirect_2">
+    <elementParameter xmi:id="_ZSMPttmMEe-WMcQgXaRkMQ" field="CLOSED_LIST" name="ROUTETYPE" value="constant"/>
+    <elementParameter xmi:id="_ZSMPt9mMEe-WMcQgXaRkMQ" field="MEMO_JAVA" name="CONDITION" value="&quot;/movie/discType = 'Blu_ray'&quot;"/>
+    <elementParameter xmi:id="_ZSMPuNmMEe-WMcQgXaRkMQ" field="CHECK" name="ENDOFCHOICE" value="false"/>
+    <elementParameter xmi:id="_ZSMPudmMEe-WMcQgXaRkMQ" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_ZSMPutmMEe-WMcQgXaRkMQ" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_ZSMPu9mMEe-WMcQgXaRkMQ" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_ZSMPvNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="when_blu_ray" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPvdmMEe-WMcQgXaRkMQ" connectorName="ROUTE_OTHER" label="otherwise1" lineStyle="16" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" source="cMessageRouter_1" target="cDirect_3">
+    <elementParameter xmi:id="_ZSMPvtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="otherwise1" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPv9mMEe-WMcQgXaRkMQ" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cDirect_4" offsetLabelX="0" offsetLabelY="0" source="cDirect_4" target="cFile_2">
+    <elementParameter xmi:id="_ZSMPwNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPwdmMEe-WMcQgXaRkMQ" connectorName="ROUTE" label="route3" lineStyle="14" metaname="cDirect_5" offsetLabelX="0" offsetLabelY="0" source="cDirect_5" target="cSetHeader_1">
+    <elementParameter xmi:id="_ZSMPwtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPw9mMEe-WMcQgXaRkMQ" connectorName="ROUTE" label="route4" lineStyle="14" metaname="cSetHeader_1" offsetLabelX="0" offsetLabelY="0" source="cSetHeader_1" target="cFile_3">
+    <elementParameter xmi:id="_ZSMPxNmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <connection xmi:id="_ZSMPxdmMEe-WMcQgXaRkMQ" connectorName="ROUTE" label="route5" lineStyle="14" metaname="cFile_3" offsetLabelX="0" offsetLabelY="0" source="cFile_3" target="cLog_1">
+    <elementParameter xmi:id="_ZSMPxtmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <note xmi:id="_ZSMPx9mMEe-WMcQgXaRkMQ" opaque="true" posX="760" posY="40" sizeHeight="241" sizeWidth="521" text="cRoutingSlip&#xD;&#xA;This EIP reroutes a message through a defined sequence of Routes. &#xD;&#xA;The sequence can be variable for each message. &#xD;&#xA;In the corresponding exercise for this EIP, &#xD;&#xA;the sequence is defined after an analysis of the message content.&#xD;&#xA;cMulticast&#xD;&#xA;This EIP sends one message in parallel to many destinations&#xD;&#xA;cSplitter&#xD;&#xA;This EIP splits the input message into several messages based &#xD;&#xA;on a defined rule. In this training, you will split an XML message into &#xD;&#xA;smaller chunks according to an XPath Query.&#xD;&#xA;The cMessageRouter EIP allows you to apply conditions or a set of rules&#xD;&#xA; to define a destination.">
+    <elementParameter xmi:id="_ZSMPyNmMEe-WMcQgXaRkMQ" field="COLOR" name="NOTE_COLOR" value="225;225;135"/>
+    <elementParameter xmi:id="_ZSMPydmMEe-WMcQgXaRkMQ" field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter xmi:id="_ZSMPytmMEe-WMcQgXaRkMQ" field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter xmi:id="_ZSMPy9mMEe-WMcQgXaRkMQ" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_ZSMPzNmMEe-WMcQgXaRkMQ" field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob xmi:id="_ZSMPzdmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMPztmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMPz9mMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP0NmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cMessageRouter_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP0dmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP0tmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP09mMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP1NmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP1dmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP1tmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP19mMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP2NmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP2dmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP2tmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP29mMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP3NmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cDirect_5" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP3dmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP3tmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP39mMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP4NmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cFile_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_ZSMP4dmMEe-WMcQgXaRkMQ">
+    <elementParameter xmi:id="_ZSMP4tmMEe-WMcQgXaRkMQ" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+  </subjob>
+</talendfile:ProcessType>
