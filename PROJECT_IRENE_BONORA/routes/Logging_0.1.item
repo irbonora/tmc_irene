@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_trjFINphEe-UqNTvsRRyLQ" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_trjFIdphEe-UqNTvsRRyLQ" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_trjFItphEe-UqNTvsRRyLQ">
+    <elementParameter xmi:id="_trjFI9phEe-UqNTvsRRyLQ" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_trjFJNphEe-UqNTvsRRyLQ" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_trjFJdphEe-UqNTvsRRyLQ" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_trjFJtphEe-UqNTvsRRyLQ" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_trjFJ9phEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_trjFKNphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_trjFKdphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_trjFKtphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_trjFK9phEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_trjFLNphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_trjFLdphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_trjFLtphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_trjFL9phEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_trjFMNphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_trjFMdphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_trjFMtphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_trjFM9phEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_trjFNNphEe-UqNTvsRRyLQ" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_trjFNdphEe-UqNTvsRRyLQ" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="200">
+    <elementParameter xmi:id="_trjFNtphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_trjFN9phEe-UqNTvsRRyLQ" field="DIRECTORY" name="URI" value="&quot;C:/Talend/ESB_routes/r02_logging/input&quot;"/>
+    <elementParameter xmi:id="_trjFONphEe-UqNTvsRRyLQ" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_trjFOdphEe-UqNTvsRRyLQ" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_trjFOtphEe-UqNTvsRRyLQ" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_trjFO9phEe-UqNTvsRRyLQ" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_trjFPNphEe-UqNTvsRRyLQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_trjFPdphEe-UqNTvsRRyLQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_trjFPtphEe-UqNTvsRRyLQ" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_trjFP9phEe-UqNTvsRRyLQ" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_trjFQNphEe-UqNTvsRRyLQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_trjFQdphEe-UqNTvsRRyLQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_trjFQtphEe-UqNTvsRRyLQ" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
+    <elementParameter xmi:id="_trjFQ9phEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_trjFRNphEe-UqNTvsRRyLQ" field="TEXT" name="LOGGING_CATEGORY" value="&quot;myInfoLog&quot;"/>
+    <elementParameter xmi:id="_trjFRdphEe-UqNTvsRRyLQ" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_trjFRtphEe-UqNTvsRRyLQ" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_trjFR9phEe-UqNTvsRRyLQ" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_trjFSNphEe-UqNTvsRRyLQ" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_trjFSdphEe-UqNTvsRRyLQ" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_trjFStphEe-UqNTvsRRyLQ" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_trjFS9phEe-UqNTvsRRyLQ" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_trjFTNphEe-UqNTvsRRyLQ" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_trjFTdphEe-UqNTvsRRyLQ" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_trjFTtphEe-UqNTvsRRyLQ" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_trjFT9phEe-UqNTvsRRyLQ" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_trjFUNphEe-UqNTvsRRyLQ" field="TEXT" name="MESSAGE" value="&quot;File read ${in.header.CamelFileName}&lt;nFile content: ${in.body}&quot;"/>
+    <elementParameter xmi:id="_trjFUdphEe-UqNTvsRRyLQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_trjFUtphEe-UqNTvsRRyLQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_trjFU9phEe-UqNTvsRRyLQ" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="280">
+    <elementParameter xmi:id="_trjFVNphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_trjFVdphEe-UqNTvsRRyLQ" field="DIRECTORY" name="URI" value="&quot;C:/Talend/ESB_routes/r02_logging/input&quot;"/>
+    <elementParameter xmi:id="_trjFVtphEe-UqNTvsRRyLQ" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_trjFV9phEe-UqNTvsRRyLQ" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_trjFWNphEe-UqNTvsRRyLQ" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_trjFWdphEe-UqNTvsRRyLQ" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_trjFWtphEe-UqNTvsRRyLQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_trjFW9phEe-UqNTvsRRyLQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_trjFXNphEe-UqNTvsRRyLQ" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_trjFXdphEe-UqNTvsRRyLQ" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_trjFXtphEe-UqNTvsRRyLQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_trjFX9phEe-UqNTvsRRyLQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_trjFYNphEe-UqNTvsRRyLQ" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="280">
+    <elementParameter xmi:id="_trjFYdphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_trjFYtphEe-UqNTvsRRyLQ" field="TEXT" name="LOGGING_CATEGORY" value="&quot;Logging.cLog_2&quot;"/>
+    <elementParameter xmi:id="_trjFY9phEe-UqNTvsRRyLQ" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_trjFZNphEe-UqNTvsRRyLQ" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_trjFZdphEe-UqNTvsRRyLQ" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_trjFZtphEe-UqNTvsRRyLQ" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_trjFZ9phEe-UqNTvsRRyLQ" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_trjFaNphEe-UqNTvsRRyLQ" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_trjFadphEe-UqNTvsRRyLQ" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_trjFatphEe-UqNTvsRRyLQ" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_trjFa9phEe-UqNTvsRRyLQ" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_trjFbNphEe-UqNTvsRRyLQ" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_trjFbdphEe-UqNTvsRRyLQ" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_trjFbtphEe-UqNTvsRRyLQ" field="TEXT" name="MESSAGE" value="&quot;File read:${in.header.CamelFileName}, Content type: ${in.header.CamelFileContentType} \nFile content: ${in.body}&quot;"/>
+    <elementParameter xmi:id="_trjFb9phEe-UqNTvsRRyLQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_trjFcNphEe-UqNTvsRRyLQ" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_trjFcdphEe-UqNTvsRRyLQ" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cFile_1" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cLog_1">
+    <elementParameter xmi:id="_trjFctphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_trjFc9phEe-UqNTvsRRyLQ" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cFile_2" offsetLabelX="0" offsetLabelY="0" source="cFile_2" target="cLog_2">
+    <elementParameter xmi:id="_trjFdNphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <note xmi:id="_trjFddphEe-UqNTvsRRyLQ" opaque="true" posX="480" posY="120" sizeHeight="321" sizeWidth="441" text="Camel message model&#xD;&#xA;Camel Exchange overview&#xD;&#xA;The exchange is a container entity and carries &#xD;&#xA;one In message or one In and one Out message.&#xD;&#xA;Because the message is one-way only, the exchange&#xD;&#xA; can hold an In message and an Out message, handling&#xD;&#xA; bidirectional communication.&#xD;&#xA;Camel Exchange overview&#xD;&#xA;xpression pattern&#xD;&#xA;Expressions in the Simple language use the pattern of:&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&quot;$&quot; then a pair of braces enclosing the expression.&#xD;&#xA;Example:&#xD;&#xA;${in.header} where there is an expression, &quot;in.header&quot; &#xD;&#xA;enclosed by the braces. There is no space between the $ &#xD;&#xA;character and the initial brace.&#xD;&#xA;&#xD;&#xA;">
+    <elementParameter xmi:id="_trjFdtphEe-UqNTvsRRyLQ" field="COLOR" name="NOTE_COLOR" value="225;225;135"/>
+    <elementParameter xmi:id="_trjFd9phEe-UqNTvsRRyLQ" field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter xmi:id="_trjFeNphEe-UqNTvsRRyLQ" field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter xmi:id="_trjFedphEe-UqNTvsRRyLQ" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_trjFetphEe-UqNTvsRRyLQ" field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob xmi:id="_trjFe9phEe-UqNTvsRRyLQ">
+    <elementParameter xmi:id="_trjFfNphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_trjFfdphEe-UqNTvsRRyLQ">
+    <elementParameter xmi:id="_trjFftphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_trjFf9phEe-UqNTvsRRyLQ">
+    <elementParameter xmi:id="_trjFgNphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_trjFgdphEe-UqNTvsRRyLQ">
+    <elementParameter xmi:id="_trjFgtphEe-UqNTvsRRyLQ" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+  </subjob>
+</talendfile:ProcessType>
