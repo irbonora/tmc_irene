@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_B_Z9gNyfEe-IwdJHZJTvLw" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_B_Z9gdyfEe-IwdJHZJTvLw" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_B_Z9gtyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z9g9yfEe-IwdJHZJTvLw" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_B_Z9hNyfEe-IwdJHZJTvLw" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_B_Z9hdyfEe-IwdJHZJTvLw" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_B_Z9htyfEe-IwdJHZJTvLw" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9h9yfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9iNyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9idyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9ityfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9i9yfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9jNyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9jdyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9jtyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9j9yfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9kNyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9kdyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9ktyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9k9yfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9lNyfEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_B_Z9ldyfEe-IwdJHZJTvLw" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="160">
+    <elementParameter xmi:id="_B_Z9ltyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_B_Z9l9yfEe-IwdJHZJTvLw" field="DIRECTORY" name="URI" value="&quot;C:/Talend/ESB_routes/r12_loadBalance/input&quot;"/>
+    <elementParameter xmi:id="_B_Z9mNyfEe-IwdJHZJTvLw" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_B_Z9mdyfEe-IwdJHZJTvLw" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_B_Z9mtyfEe-IwdJHZJTvLw" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_B_Z9m9yfEe-IwdJHZJTvLw" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_B_Z9nNyfEe-IwdJHZJTvLw" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_B_Z9ndyfEe-IwdJHZJTvLw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_B_Z9ntyfEe-IwdJHZJTvLw" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_B_Z9n9yfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_B_Z9oNyfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z9odyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z9otyfEe-IwdJHZJTvLw" componentName="cLoadBalancer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="160">
+    <elementParameter xmi:id="_B_Z9o9yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cLoadBalancer_1" show="false"/>
+    <elementParameter xmi:id="_B_Z9pNyfEe-IwdJHZJTvLw" field="CLOSED_LIST" name="STRATEGY" value="roundRobin"/>
+    <elementParameter xmi:id="_B_Z9pdyfEe-IwdJHZJTvLw" field="CLOSED_LIST" name="LANGUAGES" value="constant" show="false"/>
+    <elementParameter xmi:id="_B_Z9ptyfEe-IwdJHZJTvLw" field="TEXT" name="EXPRESSION" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_B_Z9p9yfEe-IwdJHZJTvLw" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_B_Z9qNyfEe-IwdJHZJTvLw" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_B_Z9qdyfEe-IwdJHZJTvLw" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                 *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                 *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_B_Z9qtyfEe-IwdJHZJTvLw" field="RADIO" name="BASIC_MODE" value="true" show="false"/>
+    <elementParameter xmi:id="_B_Z9q9yfEe-IwdJHZJTvLw" field="RADIO" name="EXCEPTION_MODE" value="false" show="false"/>
+    <elementParameter xmi:id="_B_Z9rNyfEe-IwdJHZJTvLw" field="RADIO" name="ROUND_ROBIN_MODE" value="false" show="false"/>
+    <elementParameter xmi:id="_B_Z9rdyfEe-IwdJHZJTvLw" field="TABLE" name="EXCEPTIONS" show="false"/>
+    <elementParameter xmi:id="_B_Z9rtyfEe-IwdJHZJTvLw" field="CLOSED_LIST" name="MAXFAILATTEMPT" value="ALWAYS" show="false"/>
+    <elementParameter xmi:id="_B_Z9r9yfEe-IwdJHZJTvLw" field="TEXT" name="ATTEMPT_NUMBER" value="3" show="false"/>
+    <elementParameter xmi:id="_B_Z9sNyfEe-IwdJHZJTvLw" field="CLOSED_LIST" name="INHERIT_ERROR_HANDLER" value="true" show="false"/>
+    <elementParameter xmi:id="_B_Z9sdyfEe-IwdJHZJTvLw" field="CLOSED_LIST" name="USE_ROUND_ROBIN" value="false" show="false"/>
+    <elementParameter xmi:id="_B_Z9styfEe-IwdJHZJTvLw" field="TEXT" name="CUSTOM_LOAD_BALANCER" value="MyCustomLoadBalancer" show="false"/>
+    <elementParameter xmi:id="_B_Z9s9yfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z9tNyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z9tdyfEe-IwdJHZJTvLw" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="120">
+    <elementParameter xmi:id="_B_Z9ttyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_B_Z9t9yfEe-IwdJHZJTvLw" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false"/>
+    <elementParameter xmi:id="_B_Z9uNyfEe-IwdJHZJTvLw" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_3"/>
+    <elementParameter xmi:id="_B_Z9udyfEe-IwdJHZJTvLw" field="TEXT" name="NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_B_Z9utyfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_B_Z9u9yfEe-IwdJHZJTvLw" field="TEXT" name="LABEL" value="to_Route1"/>
+    <elementParameter xmi:id="_B_Z9vNyfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z9vdyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z9vtyfEe-IwdJHZJTvLw" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
+    <elementParameter xmi:id="_B_Z9v9yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_B_Z9wNyfEe-IwdJHZJTvLw" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false"/>
+    <elementParameter xmi:id="_B_Z9wdyfEe-IwdJHZJTvLw" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="cDirect_4"/>
+    <elementParameter xmi:id="_B_Z9wtyfEe-IwdJHZJTvLw" field="TEXT" name="NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_B_Z9w9yfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_B_Z9xNyfEe-IwdJHZJTvLw" field="TEXT" name="LABEL" value="to_Route2"/>
+    <elementParameter xmi:id="_B_Z9xdyfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z9xtyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z9x9yfEe-IwdJHZJTvLw" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="320">
+    <elementParameter xmi:id="_B_Z9yNyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+    <elementParameter xmi:id="_B_Z9ydyfEe-IwdJHZJTvLw" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_B_Z9ytyfEe-IwdJHZJTvLw" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z9y9yfEe-IwdJHZJTvLw" field="TEXT" name="NAME" value="&quot;Route1&quot;"/>
+    <elementParameter xmi:id="_B_Z9zNyfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_B_Z9zdyfEe-IwdJHZJTvLw" field="TEXT" name="LABEL" value="Route1"/>
+    <elementParameter xmi:id="_B_Z9ztyfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z9z9yfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z90NyfEe-IwdJHZJTvLw" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="400">
+    <elementParameter xmi:id="_B_Z90dyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+    <elementParameter xmi:id="_B_Z90tyfEe-IwdJHZJTvLw" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_B_Z909yfEe-IwdJHZJTvLw" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_B_Z91NyfEe-IwdJHZJTvLw" field="TEXT" name="NAME" value="&quot;Route2&quot;"/>
+    <elementParameter xmi:id="_B_Z91dyfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_B_Z91tyfEe-IwdJHZJTvLw" field="TEXT" name="LABEL" value="Route2"/>
+    <elementParameter xmi:id="_B_Z919yfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z92NyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z92dyfEe-IwdJHZJTvLw" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="320">
+    <elementParameter xmi:id="_B_Z92tyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_B_Z929yfEe-IwdJHZJTvLw" field="DIRECTORY" name="URI" value="&quot;C:/Talend/ESB_routes/r12_loadBalance/output/route1&quot;"/>
+    <elementParameter xmi:id="_B_Z93NyfEe-IwdJHZJTvLw" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_B_Z93dyfEe-IwdJHZJTvLw" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_B_Z93tyfEe-IwdJHZJTvLw" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_B_Z939yfEe-IwdJHZJTvLw" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_B_Z94NyfEe-IwdJHZJTvLw" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_B_Z94dyfEe-IwdJHZJTvLw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_B_Z94tyfEe-IwdJHZJTvLw" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_B_Z949yfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_B_Z95NyfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z95dyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_B_Z95tyfEe-IwdJHZJTvLw" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="400">
+    <elementParameter xmi:id="_B_Z959yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cFile_4" show="false"/>
+    <elementParameter xmi:id="_B_Z96NyfEe-IwdJHZJTvLw" field="DIRECTORY" name="URI" value="&quot;C:/Talend/ESB_routes/r12_loadBalance/output/route2&quot;"/>
+    <elementParameter xmi:id="_B_Z96dyfEe-IwdJHZJTvLw" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_B_Z96tyfEe-IwdJHZJTvLw" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_B_Z969yfEe-IwdJHZJTvLw" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_B_Z97NyfEe-IwdJHZJTvLw" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_B_Z97dyfEe-IwdJHZJTvLw" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_B_Z97tyfEe-IwdJHZJTvLw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_B_Z979yfEe-IwdJHZJTvLw" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_B_Z98NyfEe-IwdJHZJTvLw" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_B_Z98dyfEe-IwdJHZJTvLw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_B_Z98tyfEe-IwdJHZJTvLw" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_B_Z989yfEe-IwdJHZJTvLw" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cFile_1" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cLoadBalancer_1">
+    <elementParameter xmi:id="_B_Z99NyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_B_Z99dyfEe-IwdJHZJTvLw" connectorName="LOADBALANCE" label="load_balance1" lineStyle="14" metaname="cLoadBalancer_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="cLoadBalancer_1" target="cDirect_1">
+    <elementParameter xmi:id="_B_Z99tyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="load_balance1" show="false"/>
+  </connection>
+  <connection xmi:id="_B_Z999yfEe-IwdJHZJTvLw" connectorName="LOADBALANCE" label="load_balance2" lineStyle="14" metaname="cLoadBalancer_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="cLoadBalancer_1" target="cDirect_2">
+    <elementParameter xmi:id="_B_Z9-NyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="load_balance2" show="false"/>
+  </connection>
+  <connection xmi:id="_B_Z9-dyfEe-IwdJHZJTvLw" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cDirect_3" offsetLabelX="0" offsetLabelY="0" source="cDirect_3" target="cFile_2">
+    <elementParameter xmi:id="_B_Z9-tyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_B_Z9-9yfEe-IwdJHZJTvLw" connectorName="ROUTE" label="route3" lineStyle="14" metaname="cDirect_4" offsetLabelX="0" offsetLabelY="0" source="cDirect_4" target="cFile_4">
+    <elementParameter xmi:id="_B_Z9_NyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <note xmi:id="_B_Z9_dyfEe-IwdJHZJTvLw" opaque="false" posX="680" posY="80" sizeHeight="281" sizeWidth="481" text="&#xD;&#xA;Bilanciare il carico di un processo tra due o&#xD;&#xA; più percorsi. Il modello Load Balancer consente&#xD;&#xA; di delegare a uno dei numerosi endpoint utilizzando&#xD;&#xA; una varietà di diverse policy di bilanciamento del carico.&#xD;&#xA;Il tipo RoudRobin is is similar to the round-robin algorithm &#xD;&#xA;employed by processes and network schedulers:&#xD;&#xA; each destination is given an equal share of messages in turn.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Regolamentare il traffico all'interno di un percorso utilizzando&#xD;&#xA; l'EIP Throttler. Assicurarsi che un endpoint specifico non &#xD;&#xA;venga sovraccaricato o che non venga superato un &#xD;&#xA;SLA concordato con un servizio esterno.">
+    <elementParameter xmi:id="_B_Z9_tyfEe-IwdJHZJTvLw" field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter xmi:id="_B_Z9_9yfEe-IwdJHZJTvLw" field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter xmi:id="_B_Z-ANyfEe-IwdJHZJTvLw" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_B_Z-AdyfEe-IwdJHZJTvLw" field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob xmi:id="_B_Z-AtyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-A9yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-BNyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-BdyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cLoadBalancer_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-BtyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-B9yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-CNyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-CdyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-CtyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-C9yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_3" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-DNyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-DdyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cDirect_4" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-DtyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-D9yfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+  </subjob>
+  <subjob xmi:id="_B_Z-ENyfEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_B_Z-EdyfEe-IwdJHZJTvLw" field="TEXT" name="UNIQUE_NAME" value="cFile_4" show="false"/>
+  </subjob>
+</talendfile:ProcessType>

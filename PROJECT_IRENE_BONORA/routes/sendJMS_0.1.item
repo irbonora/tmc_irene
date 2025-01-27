@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_bUQNQNycEe-IwdJHZJTvLw" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_bUQNQdycEe-IwdJHZJTvLw" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_bUQNQtycEe-IwdJHZJTvLw">
+    <elementParameter xmi:id="_bUQNQ9ycEe-IwdJHZJTvLw" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_bUQNRNycEe-IwdJHZJTvLw" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_bUQNRdycEe-IwdJHZJTvLw" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_bUQNRtycEe-IwdJHZJTvLw" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNR9ycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNSNycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNSdycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNStycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNS9ycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNTNycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNTdycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNTtycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNT9ycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNUNycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNUdycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNUtycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNU9ycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_bUQNVNycEe-IwdJHZJTvLw" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <note xmi:id="_bUQNVdycEe-IwdJHZJTvLw" opaque="true" posX="840" posY="80" sizeHeight="361" sizeWidth="401" text="In questo es.due diversi contesti Camel scambiano&#xD;&#xA; messaggi utilizzando il broker di messaggi, ActiveMQ.&#xD;&#xA;&#xD;&#xA;Questo esercizio ti presenta due nuovi componenti: &#xD;&#xA;cMQConnectionFactory e cJMS.&#xD;&#xA;&#xD;&#xA;Il componente cMQConnectionFactory, come i &#xD;&#xA;componenti di connessione al database in DI Jobs,&#xD;&#xA; avvia una connessione al pool di connessioni del &#xD;&#xA;broker di messaggi. Mantiene aperta la connessione &#xD;&#xA;e gestisce le eccezioni di connessione e i problemi di rete.&#xD;&#xA;&#xD;&#xA;Il componente cJMS utilizza la connessione&#xD;&#xA; cMQConnectionFactory per scambiare dati con il &#xD;&#xA;broker di messaggi. Quando viene utilizzato come &#xD;&#xA;endpoint consumer, il componente cJMS si connette &#xD;&#xA;a una coda o a un argomento sul broker e consuma&#xD;&#xA; tutti i messaggi lì archiviati. Quando viene utilizzato&#xD;&#xA; come producer, il componente cJMS invia il suo&#xD;&#xA; messaggio a una coda o a un argomento sul&#xD;&#xA; broker di messaggi.&#xD;&#xA;&#xD;&#xA;il primo contesto Camel invia messaggi a una coda &#xD;&#xA;sul broker utilizzando componenti cJMS,&#xD;&#xA; mentre il secondo contesto Camel si connette&#xD;&#xA; alla stessa coda utilizzando un componente &#xD;&#xA;consumer cJMS e consuma i messaggi.">
+    <elementParameter xmi:id="_bUQNVtycEe-IwdJHZJTvLw" field="COLOR" name="NOTE_COLOR" value="155;199;204"/>
+    <elementParameter xmi:id="_bUQNV9ycEe-IwdJHZJTvLw" field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter xmi:id="_bUQNWNycEe-IwdJHZJTvLw" field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter xmi:id="_bUQNWdycEe-IwdJHZJTvLw" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_bUQNWtycEe-IwdJHZJTvLw" field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+</talendfile:ProcessType>
