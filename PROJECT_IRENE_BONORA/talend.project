@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_npD00djNEe-cCcHhg8mDQg" label="Project_Irene_Bonora" description="" language="java" technicalLabel="PROJECT_IRENE_BONORA" author="_npD00tjNEe-cCcHhg8mDQg" productVersion="Qlik Talend Cloud Enterprise Edition-8.0.1.20240920_1319-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/irbonora/tmc_irene.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+  <TalendProperties:Project xmi:id="_npD00djNEe-cCcHhg8mDQg" label="Project_Irene_Bonora" description="" language="java" technicalLabel="PROJECT_IRENE_BONORA" author="_npD00tjNEe-cCcHhg8mDQg" productVersion="Qlik Talend Cloud Enterprise Edition-8.0.1.20250423_1207-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/irbonora/tmc_irene.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
     <migrationTask xmi:id="_nqL2MNjNEe-cCcHhg8mDQg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_npD00tjNEe-cCcHhg8mDQg" login="irene.bonora@horsainsights.r.l." firstName="Irene" lastName="Bonora" type="DQ"/>
