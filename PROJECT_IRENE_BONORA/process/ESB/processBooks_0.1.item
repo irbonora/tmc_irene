@@ -102,8 +102,8 @@
   <node componentName="tRouteInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteInput_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="VALUE" value="&quot;${in.body}&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;${in.body}&quot;" id="1"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRouteInput_1">
@@ -166,12 +166,12 @@
   <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteOutput_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="TYPE" value="Body"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
-      <elementValue elementRef="TYPE" value="Header"/>
-      <elementValue elementRef="VALUE" value="&quot;title&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
+      <elementValue elementRef="TYPE" value="Body" id="1"/>
+      <elementValue elementRef="VALUE" value="" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title" id="3"/>
+      <elementValue elementRef="TYPE" value="Header" id="4"/>
+      <elementValue elementRef="VALUE" value="&quot;title&quot;" id="5"/>
     </elementParameter>
     <elementParameter field="LABEL" name="NOTICE" value="The &quot;Name&quot; with &quot;Body&quot; type will be ignored"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -188,7 +188,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
-  <note opaque="true" posX="800" posY="40" sizeHeight="241" sizeWidth="361" text="&#xD;&#xA;To enable a DI Job to be used in a Route,&#xD;&#xA; you need to use specific components:&#xD;&#xA;&#xD;&#xA;tRouteInput:&#xD;&#xA;This component gets the exchange from the &#xD;&#xA;Route and can be configured to get the body,&#xD;&#xA; headers, and properties in a DI schema.&#xD;&#xA;&#xD;&#xA;tRouteOuput:This component builds the &#xD;&#xA;output message from the DI Job and can&#xD;&#xA; send data in the body, properties, or headers.">
+  <note opaque="true" posX="640" posY="80" sizeHeight="241" sizeWidth="361" text="&#xD;&#xA;To enable a DI Job to be used in a Route,&#xD;&#xA; you need to use specific components:&#xD;&#xA;&#xD;&#xA;tRouteInput:&#xD;&#xA;This component gets the exchange from the &#xD;&#xA;Route and can be configured to get the body,&#xD;&#xA; headers, and properties in a DI schema.&#xD;&#xA;&#xD;&#xA;tRouteOuput:This component builds the &#xD;&#xA;output message from the DI Job and can&#xD;&#xA; send data in the body, properties, or headers.">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="225;225;135"/>
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
